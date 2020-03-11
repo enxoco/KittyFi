@@ -1,0 +1,23 @@
+{
+  "name": "KittyFi!",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Replace every image on a website with the click of a button!",
+  "homepage_url": "https://theopensuite.com",
+  "icons": {
+    "16": "icon-16.png",
+    "128": "icon-128.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_title": "KittyFi!"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
