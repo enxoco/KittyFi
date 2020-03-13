@@ -1,5 +1,5 @@
-chrome.storage.sync.get('kitty', function (data) {
-	if (data.kitty && data.kitty !== 'false') {
+// chrome.storage.sync.get('kitty', function (data) {
+// 	if (data.kitty && data.kitty !== 'false') {
 		(function () {
 			var imgs = document.querySelectorAll('img');
 
@@ -34,8 +34,21 @@ chrome.storage.sync.get('kitty', function (data) {
 					}
 				}
 
+				var video = document.querySelectorAll('video')
+				for (v of video) {
+					if (!v.poster.includes('tumblr_')){
+						v.poster = cats[Math.floor(Math.random() * 1500)];
+					}
+				}
+				// var div = document.querySelectorAll('div')
+				// for (var i = 0; i < div.length; i++) {
+				// 	if (div[i].style && !div[i].style.backgroundImage.includes('tumblr_')){
+				// 		div[i].style.backgroundImage = 'url('+cats[Math.floor(Math.random() * 1500)]+')';
+				// 	}
+				// }
+
 			}
 		})();
-	}
-})
+// 	}
+// })
 

@@ -1,12 +1,12 @@
 {
-  "name": "KittyFi!",
+  "name": "",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "Replace every image on a website with the click of a button!",
+  "description": "Replace every image on a website with the click of a button! Icons made by https://www.flaticon.com/authors/freepik from Flaticon",
   "homepage_url": "https://theopensuite.com",
   "icons": {
-    "16": "icon-16.png",
-    "128": "icon-128.png"
+    "16": "icon-transparent.png",
+    "128": "icon-transparent.png"
   },
   "background": {
     "scripts": [
@@ -21,7 +21,7 @@
     }
   ],
   "browser_action": {
-    "default_title": "KittyFi!"
+    "default_title": ""
   },
   "permissions": [
     "activeTab",
